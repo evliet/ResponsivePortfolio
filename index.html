@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="index.html">Port<span>folio</span></a>
+             
+            <img id="mobile-cta" class="mobile-menu" src="Images/iconmonstr-menu-1.svg" alt="Open Nav">
+            
+            <nav>
+               <img id="mobile-exit" class="mobile-menu-exit" src="images/iconmonstr-x-mark-1.svg" alt="Exit Menu"> 
+
+                <ul class="primary-nav">
+                    <li class="current"><a href="#">About</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li class="resume-cta"><a href="#">Resume</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="subhead">All things Software Development</p>
+                <h1>Full Time Student and Freelance Web Developer</h1>
+
+                <div class="hero-cta">
+                    <a href="#" class="primary-cta">Contact me</a>
+                </div>
+            </div>
+
+            <img src="/Images/presentation-4824402.svg" class="hero-img" alt="man">
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <ul class="features-list">
+                <div class="features-box">
+                <li class="tech-style">TECHNICAL SKILLS*</li>
+                <li>HTML CSS Javascript</li>
+                <li>Bootstrap Jquery</li>
+                <li>Nodejs MongoDB</li>
+                <li>UNIX/LINUX</li>
+                <li>MS Office Photoshop</li>
+                </div>
+            </ul>
+        </div>
+    </section>
+
+    <section class="projects-section">
+        <div class="container">
+            <ul>
+                <h2>Recent Projects</h2>
+                <li> 
+                    <h3>Crypto API</h3>
+                    <img src="/Images/blockchain-3277335.svg" alt="crytoapi">
+                    
+                    <blockquote>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit facere minus est cupiditate asperiores, sit aliquid maiores perferendis quia fuga laudantium nam cum error quibusdam exercitationem tempore aperiam et magni."</blockquote>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <h3>Calculator</h3>
+                    <img src="/Images/calculator-23414.svg" alt="pcalculator">
+
+                    <blockquote>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit facere minus est cupiditate asperiores, sit aliquid maiores perferendis quia fuga laudantium nam cum error quibusdam exercitationem tempore aperiam et magni."</blockquote>
+                </li>
+            </ul>    
+            
+            <ul>
+                <li>
+                    <h3>Glassmorphism Site</h3>
+                    <img src="/Images/folders-25133.svg" alt="glassmorphism">
+
+                    <blockquote>"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit facere minus est cupiditate asperiores, sit aliquid maiores perferendis quia fuga laudantium nam cum error quibusdam exercitationem tempore aperiam et magni."</blockquote>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-left">
+                <h2>Contact:</h2>
+
+                <form action="">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name">
+
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" id="email">
+
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Leave a comment"></textarea>
+
+                    <input type="submit" class="send-message-cta" value="Send Message">
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer><p></p></footer>
+
+    <script>
+
+        const mobileBtn = document.getElementById('mobile-cta')
+            nav = document.querySelector('nav')
+            mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+
+    </script>
+
+</body>
+</html>
